@@ -375,7 +375,7 @@ In the chapter <info:bind>, we discussed two approaches to fixing it:
 1. Pass a wrapper-function, such as `setTimeout(() => button.click(), 1000)`.
 2. Bind the method to object, e.g. in the constructor.
 
-Class fields provide a third solution, which has quite an elegant syntax:
+Making methods bound to object instances using class fields is a third solution. Such methods, called "bound methods" can be created with a very elegant syntax, as shown below:
 
 ```js run
 class Button {
